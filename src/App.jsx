@@ -1,12 +1,14 @@
 import { useState } from "react"
-import CreateTask from "./assets/components/CreateTask";
+import CreateTasks from "./assets/components/CreateTasks";
+import ListTasks from "./assets/components/ListTasks";
 
 function App() {
   const [tasks, setTasks] = useState([]);
 
   return (
     <div className="bg-purple-300">
-      <CreateTask tasks={tasks} setTasks={setTasks} />
+      <CreateTasks tasks={tasks} setTasks={setTasks} />
+      <ListTasks tasks={tasks} setTasks={setTasks} />
     </div>  
   )
 }
