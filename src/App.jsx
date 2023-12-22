@@ -1,11 +1,12 @@
-import './App.css'
+import { useState } from "react"
 
 function App() {
+  const [task, setTask] = useState([]);
+
   return (
-    <>
-      Hello world    
-    </>
-  )
+    <div className="bg-purple-300 text-3xl font-bold underline">
+      Hello world!
+    </div>  )
 }
 
 export default App
