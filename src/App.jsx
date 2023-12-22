@@ -1,12 +1,14 @@
 import { useState } from "react"
+import CreateTask from "./assets/components/CreateTask";
 
 function App() {
-  const [task, setTask] = useState([]);
+  const [tasks, setTasks] = useState([]);
 
   return (
-    <div className="bg-purple-300 text-3xl font-bold underline">
-      Hello world!
-    </div>  )
+    <div className="bg-purple-300">
+      <CreateTask tasks={tasks} setTasks={setTasks} />
+    </div>  
+  )
 }
 
 export default App
