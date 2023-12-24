@@ -16,6 +16,7 @@ const handleSubmit = (e) => {
         const list = [...prev, task];
         localStorage.setItem("tasks", JSON.stringify(list));
         return list
+        setTask('');
     });
 };
 
