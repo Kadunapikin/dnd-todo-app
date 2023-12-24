@@ -19,6 +19,12 @@ const handleSubmit = (e) => {
         localStorage.setItem("tasks", JSON.stringify(list));
         return list
     });
+    toast.success('Task was created successfully')
+    setTask({
+        id: "",
+        name: "",
+        status: "todo"
+    })
 };
 
     return (
