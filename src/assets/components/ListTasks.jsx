@@ -18,7 +18,9 @@ const ListTasks = ({ tasks, setTasks }) => {
 
     return (
         <div>
-            List Tasks
+            {statuses.map((status, index) => (
+            <Section key={index} status={status} />
+            ))}
         </div>  
     )
 }
