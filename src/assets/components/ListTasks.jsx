@@ -14,6 +14,7 @@ const ListTasks = ({ tasks, setTasks }) => {
         setCompleted(fCompleted);
     }, [tasks])
 
+    const statuses = ["Todo", "Inprogress", "Completed"];
 
     return (
         <div>
