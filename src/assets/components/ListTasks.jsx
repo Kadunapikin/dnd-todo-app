@@ -3,7 +3,7 @@ import Section from "./Section";
 
 const ListTasks = ({ tasks, setTasks }) => {
     const [todos, setTodos] = useState([]);
-    const [inprogress, setInprogress] = useState([]);
+    const [inProgress, setInprogress] = useState([]);
     const [completed, setCompleted] = useState([]);
 
     useEffect(() => {
@@ -26,7 +26,7 @@ const ListTasks = ({ tasks, setTasks }) => {
             tasks={tasks}
             setTasks={setTasks}
             todos={todos}
-            inprogress={inprogress}
+            inprogress={inProgress}
             completed={completed}
             />
             ))}
