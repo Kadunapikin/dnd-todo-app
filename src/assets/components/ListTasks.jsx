@@ -9,7 +9,9 @@ const ListTasks = ({ tasks, setTasks }) => {
         const fTodos = tasks.filter(task => task.status === "todo");
         const fInprogress = tasks.filter(task => task.status === "inprogress");
         const fCompleted = tasks.filter(task => task.status === "completed");
-
+        setTodos(fTodos);
+        setInprogress(fInprogress);
+        setCompleted(fCompleted);
     }, [tasks])
 
 
