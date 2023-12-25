@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Section from "./Section";
 
 const ListTasks = ({ tasks, setTasks }) => {
     const [todos, setTodos] = useState([]);
@@ -17,9 +18,17 @@ const ListTasks = ({ tasks, setTasks }) => {
     const statuses = ["Todo", "Inprogress", "Completed"];
 
     return (
-        <div>
+        <div className="flex gap-16">
             {statuses.map((status, index) => (
-            <Section key={index} status={status} />
+            <Section 
+            key={index} 
+            status={status}
+            tasks={tasks}
+            setTasks={setTasks}
+            todos={todos}
+            inprogress={inprogress}
+            completed={completed}
+            />
             ))}
         </div>  
     )
