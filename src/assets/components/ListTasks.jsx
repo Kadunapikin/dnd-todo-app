@@ -26,7 +26,7 @@ const ListTasks = ({ tasks, setTasks }) => {
             tasks={tasks}
             setTasks={setTasks}
             todos={todos}
-            inprogress={inProgress}
+            inProgress={inProgress}
             completed={completed}
             />
             ))}

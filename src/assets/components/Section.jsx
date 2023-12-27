@@ -19,7 +19,7 @@ const Section = ({ status, tasks, setTasks, todos, inProgress, completed }) => {
 
     return(
         <div className="w-64">
-            <Header text={text} bg={bg} count={todos.length} /> List
+            <Header text={text} bg={bg} count={tasksToMap.length} /> List
         </div>
     )
 }
