@@ -1,8 +1,8 @@
-const Header = ({  }) => {
+const Task = ({ task, tasks, setTasks }) => {
     return(
         <div>
-
+            <p>{task.name}</p>
         </div>    
     )
 }
-export default Header;
+export default Task;

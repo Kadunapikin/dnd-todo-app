@@ -1,4 +1,5 @@
 import Header from "./Header";
+import Task from "./Task";
 
 const Section = ({ status, tasks, setTasks, todos, inProgress, completed }) => {
     let text = "Todo";
@@ -19,7 +20,13 @@ const Section = ({ status, tasks, setTasks, todos, inProgress, completed }) => {
 
     return(
         <div className="w-64">
-            <Header text={text} bg={bg} count={tasksToMap.length} /> List
+            <Header text={text} bg={bg} count={tasksToMap.length} />
+            {tasksToMap.length > 0 && tasksToMap.map(task => <Task 
+            key={task.id} 
+            task={task} 
+            tasks={tasks} 
+            setTasks={setTasks} 
+            />)}
         </div>
     )
 }
